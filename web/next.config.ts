@@ -32,7 +32,6 @@ const nextConfig: NextConfig = {
         // Charset estrito em nível de cabeçalho HTTP (módulo 2, seção 2.6)
         source: "/:path*",
         headers: [
-          { key: "Content-Type", value: "text/html; charset=utf-8" },
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "Content-Security-Policy", value: CSP },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
